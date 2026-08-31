@@ -1,0 +1,71 @@
+/* Studio Aether — Mission Control theme
+   void-black base, neon cyan + green accents, HUD hairline borders. */
+
+/* Force dark regardless of system preference. */
+:root,
+[data-theme='dark'],
+[data-theme='light'] {
+	/* Palette */
+	--sa-void: #020914;
+	--sa-panel: #04101f;
+	--sa-cyan: #00e5ff;
+	--sa-green: #00ff88;
+
+	/* Starlight core colours */
+	--sl-color-bg: var(--sa-void);
+	--sl-color-bg-nav: var(--sa-void);
+	--sl-color-bg-sidebar: var(--sa-panel);
+	--sl-color-bg-inline-code: rgba(0, 229, 255, 0.08);
+
+	--sl-color-accent: var(--sa-cyan);
+	--sl-color-accent-high: var(--sa-cyan);
+	--sl-color-accent-low: rgba(0, 229, 255, 0.12);
+
+	--sl-color-text: #d5e3f0;
+	--sl-color-text-accent: var(--sa-cyan);
+	--sl-color-text-invert: #020914;
+
+	--sl-color-hairline: rgba(0, 229, 255, 0.16);
+	--sl-color-hairline-light: rgba(0, 229, 255, 0.10);
+	--sl-color-hairline-shade: rgba(0, 229, 255, 0.06);
+
+	--sl-color-gray-1: #f2f7ff;
+	--sl-color-gray-2: #d5e3f0;
+	--sl-color-gray-3: #7f95ad;
+	--sl-color-gray-4: #46586d;
+	--sl-color-gray-5: #1b2b3d;
+	--sl-color-gray-6: #0a1626;
+}
+
+/* Headings get a subtle cyan glow. */
+:root h1,
+:root h2,
+:root h3 {
+	text-shadow: 0 0 18px rgba(0, 229, 255, 0.25);
+}
+
+/* Neon accent for links in prose. */
+:root a:not(.tab a) {
+	transition: text-shadow 0.15s ease;
+}
+:root a:hover {
+	text-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
+}
+
+/* HUD-style hairlines under headings. */
+:root .sl-markdown-content h2 {
+	border-bottom: 1px solid rgba(0, 229, 255, 0.18);
+	padding-bottom: 0.35em;
+}
+
+/* Green as secondary signal for "active"/"healthy" states. */
+:root .sl-badge.default {
+	--sl-color-accent: var(--sa-green);
+	--sl-color-accent-high: var(--sa-green);
+}
+
+/* Code blocks: mono, subtle cyan tint. */
+:root pre,
+:root code {
+	font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+}
