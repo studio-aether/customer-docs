@@ -1,71 +1,95 @@
-/* Studio Aether — Mission Control theme
-   void-black base, neon cyan + green accents, HUD hairline borders. */
+/* Studio Aether — "Bold Cut" theme.
+   Black & white base, gold primary accent, dark navy secondary.
+   Sharp corners, flat colours, no gradients, no rounding. */
 
-/* Force dark regardless of system preference. */
 :root,
 [data-theme='dark'],
 [data-theme='light'] {
 	/* Palette */
-	--sa-void: #020914;
-	--sa-panel: #04101f;
-	--sa-cyan: #00e5ff;
-	--sa-green: #00ff88;
+	--sa-black: #050505;
+	--sa-panel: #0b0b0b;
+	--sa-white: #f5f5f5;
+	--sa-gold: #e9b11c; /* primary accent */
+	--sa-gold-bright: #f6c943; /* hover */
+	--sa-navy: #24407a; /* secondary accent */
+	--sa-navy-deep: #16294d;
 
 	/* Starlight core colours */
-	--sl-color-bg: var(--sa-void);
-	--sl-color-bg-nav: var(--sa-void);
+	--sl-color-bg: var(--sa-black);
+	--sl-color-bg-nav: #000000;
 	--sl-color-bg-sidebar: var(--sa-panel);
-	--sl-color-bg-inline-code: rgba(0, 229, 255, 0.08);
+	--sl-color-bg-inline-code: #141414;
 
-	--sl-color-accent: var(--sa-cyan);
-	--sl-color-accent-high: var(--sa-cyan);
-	--sl-color-accent-low: rgba(0, 229, 255, 0.12);
+	--sl-color-accent: var(--sa-gold);
+	--sl-color-accent-high: #050505; /* text on gold */
+	--sl-color-accent-low: #241c00;
 
-	--sl-color-text: #d5e3f0;
-	--sl-color-text-accent: var(--sa-cyan);
-	--sl-color-text-invert: #020914;
+	--sl-color-text: var(--sa-white);
+	--sl-color-text-accent: #ffffff;
+	--sl-color-text-invert: #050505;
 
-	--sl-color-hairline: rgba(0, 229, 255, 0.16);
-	--sl-color-hairline-light: rgba(0, 229, 255, 0.10);
-	--sl-color-hairline-shade: rgba(0, 229, 255, 0.06);
+	--sl-color-hairline: #2a2a2a;
+	--sl-color-hairline-light: #1f1f1f;
+	--sl-color-hairline-shade: #141414;
 
-	--sl-color-gray-1: #f2f7ff;
-	--sl-color-gray-2: #d5e3f0;
-	--sl-color-gray-3: #7f95ad;
-	--sl-color-gray-4: #46586d;
-	--sl-color-gray-5: #1b2b3d;
-	--sl-color-gray-6: #0a1626;
+	--sl-color-gray-1: #f5f5f5;
+	--sl-color-gray-2: #c9c9c9;
+	--sl-color-gray-3: #8a8a8a;
+	--sl-color-gray-4: #555555;
+	--sl-color-gray-5: #222222;
+	--sl-color-gray-6: #111111;
 }
 
-/* Headings get a subtle cyan glow. */
-:root h1,
-:root h2,
-:root h3 {
-	text-shadow: 0 0 18px rgba(0, 229, 255, 0.25);
+/* Sharp, angular edges everywhere — no rounding, no pills. */
+*,
+*::before,
+*::after {
+	border-radius: 0 !important;
 }
 
-/* Neon accent for links in prose. */
-:root a:not(.tab a) {
-	transition: text-shadow 0.15s ease;
-}
-:root a:hover {
-	text-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
-}
-
-/* HUD-style hairlines under headings. */
-:root .sl-markdown-content h2 {
-	border-bottom: 1px solid rgba(0, 229, 255, 0.18);
-	padding-bottom: 0.35em;
+/* Bold headings with a hard gold rule underneath. */
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 800;
+	letter-spacing: 0.01em;
 }
 
-/* Green as secondary signal for "active"/"healthy" states. */
-:root .sl-badge.default {
-	--sl-color-accent: var(--sa-green);
-	--sl-color-accent-high: var(--sa-green);
+.sl-markdown-content h1,
+.sl-markdown-content h2 {
+	border-bottom: 2px solid var(--sa-gold);
+	padding-bottom: 0.3em;
 }
 
-/* Code blocks: mono, subtle cyan tint. */
-:root pre,
-:root code {
-	font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+/* Links: flat gold, bold, no glow, hard underline. */
+.sl-markdown-content a {
+	color: var(--sa-gold);
+	font-weight: 600;
+	text-decoration: none;
+	border-bottom: 1px solid var(--sa-gold);
 }
+
+.sl-markdown-content a:hover {
+	color: var(--sa-gold-bright);
+	border-bottom-color: var(--sa-gold-bright);
+	background: none;
+}
+
+/* Navy as the secondary accent: blockquotes and code. */
+.sl-markdown-content blockquote {
+	border-left: 4px solid var(--sa-navy);
+	background: var(--sa-panel);
+}
+
+.sl-markdown-content pre {
+	border: 1px solid var(--sa-navy);
+}
+
+/* Tables: hard gold header, no soft shading. */
+.sl-markdown-content thead th {
+	border-bottom: 2px solid var(--sa-gold);
+	color: var(--sa-white);
+}
+
+/* Inline code keeps its gold-tinted flat background, no rounding (handled above). */
