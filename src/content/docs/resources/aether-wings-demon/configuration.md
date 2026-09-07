@@ -66,6 +66,25 @@ Config.Save = {
 | `applyOnJoin` | restore the stored look when the player joins |
 | `playerChoice` | let each player switch `applyOnJoin` off for themselves |
 
+## Language
+
+```lua
+Config.Locale = 'en'
+```
+
+Six languages ship: `en`, `de`, `fr`, `pt`, `es`, `th`. A key missing from the
+chosen language falls back to English, so a partly translated file never puts a
+raw key in front of a player.
+
+To add your own, drop `locales/<code>.lua` next to the others and point
+`Config.Locale` at it. The folder stays readable after escrow, so rewording the
+shipped text works the same way. Keep the `%s` and `%d` placeholders and their
+order: a line that loses one falls back to the unformatted sentence rather than
+breaking the resource.
+
+Thai needs a font that covers it. The menu font does not, so the stylesheet
+falls back to Leelawadee UI and Tahoma, both present on every Windows install.
+
 ## Colours
 
 ```lua
