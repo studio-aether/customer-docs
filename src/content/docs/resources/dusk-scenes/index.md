@@ -30,8 +30,8 @@ requires `ox_lib` + `oxmysql`.
 
 ## Pages
 
-- [Installation](/resources/dusk-scenes/installation/)
-- [Configuration](/resources/dusk-scenes/configuration/)
-- [Catalog](/resources/dusk-scenes/catalog/)
-- [Commands & controls](/resources/dusk-scenes/commands/)
-- [Troubleshooting & performance](/resources/dusk-scenes/troubleshooting/)
+- [Installation](/customer-docs/resources/dusk-scenes/installation/)
+- [Configuration](/customer-docs/resources/dusk-scenes/configuration/)
+- [Catalog](/customer-docs/resources/dusk-scenes/catalog/)
+- [Commands & controls](/customer-docs/resources/dusk-scenes/commands/)
+- [Troubleshooting & performance](/customer-docs/resources/dusk-scenes/troubleshooting/)

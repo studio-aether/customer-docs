@@ -32,8 +32,8 @@ the resource: no prop pack, no shared dependency.
 
 ## Pages
 
-- [Installation](/resources/aether-wings-demon/installation/)
-- [Configuration](/resources/aether-wings-demon/configuration/)
-- [Commands and menu](/resources/aether-wings-demon/commands/)
-- [Developer API](/resources/aether-wings-demon/developers/)
-- [Troubleshooting](/resources/aether-wings-demon/troubleshooting/)
+- [Installation](/customer-docs/resources/aether-wings-demon/installation/)
+- [Configuration](/customer-docs/resources/aether-wings-demon/configuration/)
+- [Commands and menu](/customer-docs/resources/aether-wings-demon/commands/)
+- [Developer API](/customer-docs/resources/aether-wings-demon/developers/)
+- [Troubleshooting](/customer-docs/resources/aether-wings-demon/troubleshooting/)
