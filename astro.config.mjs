@@ -18,6 +18,10 @@ export default defineConfig({
 					collapsed: false,
 					items: [{ autogenerate: { directory: 'resources', collapsed: false } }],
 				},
+				{
+					label: 'Guides',
+					items: [{ autogenerate: { directory: 'guides' } }],
+				},
 			],
 		}),
 	],
