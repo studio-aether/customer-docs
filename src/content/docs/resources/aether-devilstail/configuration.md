@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Every option in config.lua for aether_cat.
+description: Every option in config.lua for aether_devilstail.
 ---
 
 Everything lives in `config.lua`, which stays readable after escrow.
@@ -9,11 +9,11 @@ Everything lives in `config.lua`, which stays readable after escrow.
 
 ```lua
 Config.Permissions = {
-    use   = { ace = 'aether_cat.use',   groups = { 'user', 'admin' }, everyone = true },
-    tint  = { ace = 'aether_cat.tint',  groups = { 'user', 'admin' }, everyone = true },
-    save  = { ace = 'aether_cat.save',  groups = { 'user', 'admin' }, everyone = true },
-    gizmo = { ace = 'aether_cat.gizmo', groups = { 'admin' },         everyone = true },
-    admin = { ace = 'aether_cat.admin', groups = { 'admin' },         everyone = false },
+    use   = { ace = 'aether_devilstail.use',   groups = { 'user', 'admin' }, everyone = true },
+    tint  = { ace = 'aether_devilstail.tint',  groups = { 'user', 'admin' }, everyone = true },
+    save  = { ace = 'aether_devilstail.save',  groups = { 'user', 'admin' }, everyone = true },
+    gizmo = { ace = 'aether_devilstail.gizmo', groups = { 'admin' },         everyone = true },
+    admin = { ace = 'aether_devilstail.admin', groups = { 'admin' },         everyone = false },
 }
 ```
 
@@ -29,7 +29,7 @@ Config.Permissions = {
 ACE check entirely. Set it to `false` to fall back to `groups` and `ace`:
 
 ```
-add_ace group.admin aether_cat.admin allow
+add_ace group.admin aether_devilstail.admin allow
 ```
 
 ## Admins without a framework group
@@ -108,9 +108,9 @@ swatch in the menu; the prop keeps the colour that is in its texture.
 ## Placement
 
 `Config.Sets` holds each part with its bone, offset and rotation. The shipped
-values are measured against the RDR2 ped skeleton: ears on `SKEL_Head`, the tail
-on `SKEL_ROOT`. Ped models differ in head shape, which is what the in-game
-**Adjust** mode is for.
+values are measured against the RDR2 ped skeleton: the tail on `SKEL_ROOT`, the
+horns on `SKEL_Head` with their base 15.5 cm above the bone. Ped models differ in
+head shape, which is what the in-game **Adjust** mode is for.
 
 Any part also takes `enabled = false`, which removes it for everyone: no model,
 no colour row, no sync. `default = false` keeps it off until a script switches it
@@ -127,7 +127,7 @@ grow with the number of wearers nearby. A watchdog restarts the clip if it ever
 stops.
 
 ```lua
-animDict  = 'aether_cat_sway_v63',
+animDict  = 'aether_devil_sway_v1',
 animName  = 'idle',
 animSpeed = 1.0,
 ```
@@ -136,22 +136,20 @@ animSpeed = 1.0,
 authored animation, not from a setting. The dictionary ships in `stream/`, so
 there is no second resource to install.
 
-### The ears
+### The horns
+
+The horns carry `motion = 'none'` and do not move. Horns that sway look wrong,
+and a still prop costs nothing.
+
+### The script driven modes
 
 ```lua
-Config.EarMotion = { enabled = false }
+Config.EarMotion  = { enabled = false }
+Config.SwayMotion = { enabled = false }
+Config.WingMotion = { enabled = false }
 ```
 
-Off by default. Ears sitting still look right, and unlike the tail this one is
-script driven: every step costs a re-attach. Switch it on for a slow sway,
-stronger while the player moves, plus an occasional twitch. Both ears are one
-prop, so they move together.
-
-### Sway
-
-```lua
-Config.SwayMotion = { enabled = true }
-```
-
-No shipped part uses `motion = 'sway'`, so this does nothing as delivered. The
-values stay in the config for anyone who switches a part back to it.
+All three are off and no shipped part uses them. They exist because the three
+cosmetics share one codebase; switch a part to `motion = 'sway'` and the matching
+block takes over. Unlike the animated tail, those modes re-attach the prop on
+every step, so they cost per frame.

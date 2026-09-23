@@ -1,21 +1,21 @@
 ---
 title: Commands and menu
-description: Console commands and the in-game menu of aether_cat.
+description: Console commands and the in-game menu of aether_devilstail.
 ---
 
 Type these in the F8 console, without a leading slash.
 
 | Command | Needs | Does |
 |---|---|---|
-| `neko` | `use` | Put it on, or confirm it is on |
-| `neko off` | — | Take it off |
-| `neko colour <index>` | `tint` | Set the colour, `-1` stops applying one |
-| `neko save` | `save` | Store the current look |
-| `neko autosave` | `save` | Toggle applying the stored look on join |
-| `neko forget` | `save` | Delete the stored look |
-| `neko preset <name>` | `use` | Apply a stored preset |
-| `neko reset` | `use` | Back to the config defaults |
-| `nekomenu` | `use` | Open the menu |
+| `devilstail` | `use` | Put it on, or confirm it is on |
+| `devilstail off` | — | Take it off |
+| `devilstail colour <index>` | `tint` | Set the colour, `-1` stops applying one |
+| `devilstail save` | `save` | Store the current look |
+| `devilstail autosave` | `save` | Toggle applying the stored look on join |
+| `devilstail forget` | `save` | Delete the stored look |
+| `devilstail preset <name>` | `use` | Apply a stored preset |
+| `devilstail reset` | `use` | Back to the config defaults |
+| `devilstailmenu` | `use` | Open the menu |
 
 `colour` also answers to `color`, `tint` and `farbe`.
 

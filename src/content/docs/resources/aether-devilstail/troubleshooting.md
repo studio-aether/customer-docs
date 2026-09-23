@@ -1,12 +1,12 @@
 ---
 title: Troubleshooting
-description: What to check when aether_cat does not behave.
+description: What to check when aether_devilstail does not behave.
 ---
 
 ## The props are white
 
-The ytyp is not reaching the model. Check that `stream/` still holds both the
-model files and the `.ytyp`, and that nothing else on the server streams a model
+The ytyp is not reaching the model. Check that `stream/` still holds the model
+files and both `.ytyp` files, and that nothing else on the server streams a model
 of the same name. Two resources shipping the same model name is the usual cause.
 
 ## The tail does not move
@@ -15,16 +15,17 @@ The animation dictionary is not loading. Three causes, in the order worth
 checking:
 
 1. An older animation resource is still running and streams
-   `aether_cat_sway_v63` under the same global name. Stop it. The dictionary
-   ships inside `aether_cat` now.
-2. `stream/aether_cat_sway_v63.ycd` is missing from the folder, or it was
+   `aether_devil_sway_v1` under the same global name. Stop it. The dictionary
+   ships inside `aether_devilstail` now.
+2. `stream/aether_devil_sway_v1.ycd` is missing from the folder, or it was
    committed through a tool that rewrote its bytes. It is a binary file.
 3. The request timed out. The resource retries on its own after a minute and
    says so in the console; it never blocks while waiting.
 
-The props still appear in all three cases. A stiff tail is the symptom.
+The props still appear in all three cases. A stiff tail is the symptom. The horns
+never move: they are set to `motion = 'none'` on purpose.
 
-## Nothing happens on `neko`
+## Nothing happens on `devilstail`
 
 Another resource registered the same command and shadows it. Rename it in
 `Config.Command`, restart, and check the server console for a duplicate warning.
@@ -60,9 +61,9 @@ Config.Save.table = 'old_folder_name_loadout'
 
 ## Another player's colour is wrong for a moment
 
-Hovering the palette previews locally and does not replicate. What others see
-is the last colour that was actually picked. If a committed colour is not
-arriving at all, check `Config.Sync.enabled` and the range below.
+Hovering the palette previews locally and does not replicate. What others see is
+the last colour that was actually picked. If a committed colour is not arriving
+at all, check `Config.Sync.enabled` and the range below.
 
 ## Other players do not see it
 

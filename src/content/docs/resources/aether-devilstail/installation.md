@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Requirements and setup steps for aether_cat.
+description: Requirements and setup steps for aether_devilstail.
 ---
 
 ## Requirements
@@ -12,10 +12,10 @@ description: Requirements and setup steps for aether_cat.
 
 ## Setup
 
-1. Copy `aether_cat` into your `resources` folder.
-2. Add `ensure aether_cat` to `server.cfg`.
+1. Copy `aether_devilstail` into your `resources` folder.
+2. Add `ensure aether_devilstail` to `server.cfg`.
 3. If you already run a separate animation resource that streams
-   `aether_cat_sway_v63`, stop it. The animation ships inside this resource now,
+   `aether_devil_sway_v1`, stop it. The animation ships inside this resource now,
    and two resources claiming the same global dictionary name fight over it.
 4. Restart the server.
 5. **Every player has to reconnect once.** The client keeps streamed models in
@@ -27,10 +27,10 @@ No SQL to run: the two tables are created on first start when
 ## Checking it works
 
 ```
-neko
+devilstail
 ```
 
-The props appear. `nekomenu` opens the menu.
+The props appear. `devilstailmenu` opens the menu.
 
 ## What escrow leaves readable
 
@@ -45,7 +45,7 @@ Readable because Cfx Asset Escrow does not encrypt the format:
 - `ui/` — HTML, JavaScript, CSS, the font and the button image. Your players'
   browsers load these anyway, so encrypting them would protect nothing while
   stopping you from restyling the menu.
-- `stream/*.ytyp` and `stream/*.ycd` — the archetype definition and the tail
+- `stream/*.ytyp` and `stream/*.ycd` — the archetype definitions and the tail
   animation.
 - `README.md`, `LICENSE` and `docs/DEVELOPERS.md`.
 
