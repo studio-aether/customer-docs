@@ -3,6 +3,8 @@ title: Aether Goblins
 description: Hostile goblins for RedM with ambush points, an admin spawn menu and exports.
 ---
 
+![Aether Goblins: Boarhelm, Grimfang and Shaman](../../../../assets/aether-goblins/cover.webp)
+
 `aether_goblins` adds hostile goblins to your server. You place ambush points in the config,
 and when a player walks into one the server rolls the dice. On a hit, goblins appear in a
 ring around that player and attack. Staff can also open a spawn menu and put goblins in
