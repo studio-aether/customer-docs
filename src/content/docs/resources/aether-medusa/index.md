@@ -43,7 +43,7 @@ Players need a fresh connect after the resource is added, streamed assets only l
 
 ## Store
 
-[STORE_LINK]
+https://studio-aether.tebex.io/package/7716877
 
 ## Pages
 
