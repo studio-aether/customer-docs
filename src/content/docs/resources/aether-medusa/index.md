@@ -3,7 +3,7 @@ title: Aether Medusa
 description: Animated snake hair for RedM with three colour zones, saved looks and exports.
 ---
 
-<!-- COVER: add src/assets/aether-medusa/cover.webp and an image line here -->
+![Aether Medusa](../../../../assets/aether-medusa/cover.webp)
 
 `aether_medusa` gives a player a crown of living snakes. Ten of them sway, turn their
 heads and open their jaws, each on its own timing, and the two on top rise up in turn
