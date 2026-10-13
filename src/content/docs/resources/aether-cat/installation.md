@@ -14,8 +14,11 @@ description: Requirements and setup steps for aether_cat.
 
 1. Copy `aether_cat` into your `resources` folder.
 2. Add `ensure aether_cat` to `server.cfg`.
-3. Restart the server.
-4. **Every player has to reconnect once.** The client keeps streamed models in
+3. If you already run a separate animation resource that streams
+   `aether_cat_sway_v63`, stop it. The animation ships inside this resource now,
+   and two resources claiming the same global dictionary name fight over it.
+4. Restart the server.
+5. **Every player has to reconnect once.** The client keeps streamed models in
    memory, so a `restart` alone leaves them on the old files.
 
 No SQL to run: the two tables are created on first start when
@@ -31,7 +34,20 @@ The props appear. `nekomenu` opens the menu.
 
 ## What escrow leaves readable
 
-`config.lua`, `data/presets.lua`, the three files under `ui/`, `README.md` and
-`docs/DEVELOPERS.md`. The UI is deliberately open: your players' browsers load it
-anyway, so encrypting it would protect nothing while stopping you from restyling
-the menu. Everything under `client/` and `server/` is encrypted.
+Readable on purpose:
+
+- `config.lua` — every setting.
+- `data/presets.lua` — your own exported presets.
+- `locales/*.lua` — all six language files. Reword any line, or add a language.
+
+Readable because Cfx Asset Escrow does not encrypt the format:
+
+- `ui/` — HTML, JavaScript, CSS, the font and the button image. Your players'
+  browsers load these anyway, so encrypting them would protect nothing while
+  stopping you from restyling the menu.
+- `stream/*.ytyp` and `stream/*.ycd` — the archetype definition and the tail
+  animation.
+- `README.md`, `LICENSE` and `docs/DEVELOPERS.md`.
+
+Everything else is encrypted, including every file under `client/` and `server/`
+and both model files.

@@ -28,8 +28,8 @@ off. The model ships inside the resource, so no extra prop pack is required.
 
 ## Pages
 
-- [Installation](/resources/dusk-knuckles/installation/)
-- [Configuration](/resources/dusk-knuckles/configuration/)
-- [Fitting & commands](/resources/dusk-knuckles/commands/)
-- [Other frameworks](/resources/dusk-knuckles/frameworks/)
-- [Troubleshooting](/resources/dusk-knuckles/troubleshooting/)
+- [Installation](/customer-docs/resources/dusk-knuckles/installation/)
+- [Configuration](/customer-docs/resources/dusk-knuckles/configuration/)
+- [Fitting & commands](/customer-docs/resources/dusk-knuckles/commands/)
+- [Other frameworks](/customer-docs/resources/dusk-knuckles/frameworks/)
+- [Troubleshooting](/customer-docs/resources/dusk-knuckles/troubleshooting/)

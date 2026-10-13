@@ -15,6 +15,8 @@ no matter who calls.
 | `Toggle(src)` | `true` if the call went out |
 | `SetActive(src, on)` | `true` if the call went out |
 | `SetTint(src, index, group)` | `true` if the call went out |
+| `SetPart(src, id, on)` | `true` if the call went out |
+| `SetParts(src, map)` | `true` if every call went out |
 | `ApplyPreset(src, name)` | `false` if the preset does not exist |
 | `GetPreset(name)` | the preset table, or `nil` |
 | `GetPresets()` | all presets |
@@ -22,6 +24,14 @@ no matter who calls.
 
 `true` means the request was sent and the player is allowed. The prop attaches one
 frame later on the client, so do not treat it as "is wearing it now".
+
+`SetPart` and `SetParts` switch single parts at runtime. `id` is a part id from
+`Config.Sets`, so `ears` or `tail`:
+
+```lua
+exports.aether_cat:SetParts(src, { ears = true, tail = false })
+exports.aether_cat:SetPart(src, 'ears', false)
+```
 
 ## Client exports
 

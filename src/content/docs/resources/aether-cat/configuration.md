@@ -108,9 +108,50 @@ swatch in the menu; the prop keeps the colour that is in its texture.
 ## Placement
 
 `Config.Sets` holds each part with its bone, offset and rotation. The shipped
-values are measured against the RDR2 ped skeleton: ears on `SKEL_Head`, the tail on `SKEL_ROOT` with the tip hanging off the base. Ped models differ, which
-is what the in-game **Adjust** mode is for.
+values are measured against the RDR2 ped skeleton: ears on `SKEL_Head`, the tail
+on `SKEL_ROOT`. Ped models differ in head shape, which is what the in-game
+**Adjust** mode is for.
+
+Any part also takes `enabled = false`, which removes it for everyone: no model,
+no colour row, no sync. `default = false` keeps it off until a script switches it
+on through the `SetPart` export.
 
 ## Motion
 
-The ears sway slowly and twitch now and then; the tail waves from root to tip because both halves run on a different phase.
+### The tail
+
+The tail is not moved by the script. It is a fragment carrying a four joint
+chain, and the resource plays a custom idle animation on it with a single call.
+The engine does the rest. Nothing is re-attached per frame and the cost does not
+grow with the number of wearers nearby. A watchdog restarts the clip if it ever
+stops.
+
+```lua
+animDict  = 'aether_cat_sway_v63',
+animName  = 'idle',
+animSpeed = 1.0,
+```
+
+`animSpeed` changes only the pace. How far the tail swings comes from the
+authored animation, not from a setting. The dictionary ships in `stream/`, so
+there is no second resource to install.
+
+### The ears
+
+```lua
+Config.EarMotion = { enabled = false }
+```
+
+Off by default. Ears sitting still look right, and unlike the tail this one is
+script driven: every step costs a re-attach. Switch it on for a slow sway,
+stronger while the player moves, plus an occasional twitch. Both ears are one
+prop, so they move together.
+
+### Sway
+
+```lua
+Config.SwayMotion = { enabled = true }
+```
+
+No shipped part uses `motion = 'sway'`, so this does nothing as delivered. The
+values stay in the config for anyone who switches a part back to it.

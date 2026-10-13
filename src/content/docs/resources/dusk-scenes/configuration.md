@@ -87,7 +87,7 @@ play. The full map lives in `Config.Keys`; the important ones:
 ## Commands
 
 Names are configurable (empty string disables a command). See
-[Commands & controls](/resources/dusk-scenes/commands/).
+[Commands & controls](/customer-docs/resources/dusk-scenes/commands/).
 
 ```lua
 Config.Commands = {
@@ -109,7 +109,7 @@ Config.Commands = {
 
 ## Streaming (performance)
 
-See [Troubleshooting & performance](/resources/dusk-scenes/troubleshooting/) for the
+See [Troubleshooting & performance](/customer-docs/resources/dusk-scenes/troubleshooting/) for the
 full explanation. The tunables live in `Config.Stream`:
 
 | Setting | Default | Purpose |

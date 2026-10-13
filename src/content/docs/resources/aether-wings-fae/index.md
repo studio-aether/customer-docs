@@ -32,8 +32,8 @@ the resource: no prop pack, no shared dependency.
 
 ## Pages
 
-- [Installation](/resources/aether-wings-fae/installation/)
-- [Configuration](/resources/aether-wings-fae/configuration/)
-- [Commands and menu](/resources/aether-wings-fae/commands/)
-- [Developer API](/resources/aether-wings-fae/developers/)
-- [Troubleshooting](/resources/aether-wings-fae/troubleshooting/)
+- [Installation](/customer-docs/resources/aether-wings-fae/installation/)
+- [Configuration](/customer-docs/resources/aether-wings-fae/configuration/)
+- [Commands and menu](/customer-docs/resources/aether-wings-fae/commands/)
+- [Developer API](/customer-docs/resources/aether-wings-fae/developers/)
+- [Troubleshooting](/customer-docs/resources/aether-wings-fae/troubleshooting/)

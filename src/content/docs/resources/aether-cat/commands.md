@@ -23,19 +23,19 @@ Type these in the F8 console, without a leading slash.
 
 Arrow keys move, Enter selects, Escape closes. Drag with the mouse to turn the
 camera, the wheel zooms. Colours are shown as actual swatches, four rows of
-eight, and hovering one previews it on the prop before you commit.
+eight, and hovering one previews it on the prop before you commit. That preview
+is local: other players keep seeing your committed colour until you pick one.
+Closing the menu or cancelling an adjustment puts the committed look back.
 
 **Adjust** moves a part live: 2.5 mm steps, 0.6 mm with Shift held. The finished
 numbers are written to the F8 console so you can paste them into `config.lua`.
 
 ## Presets
 
-An admin stores the current placement and colour under a name:
+Open the menu and pick **Export**. It needs the `admin` node, and it stores
+the current placement and colour under a name you type. There is no console
+command for this.
 
-```
-nekoexport my_variant
-```
-
-It applies immediately for every player, no restart. Names take `a-z`, `0-9` and
+The preset applies immediately for every player, no restart. Names take `a-z`, `0-9` and
 underscore, up to 32 characters, and `Config.Export.maxPresets` caps how many can
 exist. Presets live in `data/presets.lua`.

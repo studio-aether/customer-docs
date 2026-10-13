@@ -14,7 +14,7 @@ All configuration lives in `config.lua`, which stays readable after escrow.
 | `Config.Bone` | Player bone the prop is attached to. Default `SKEL_R_Finger21`. |
 | `Config.Offset` | Position offset in meters, relative to the bone. `x` = forward/back, `y` = left/right, `z` = up/down. |
 | `Config.Rotation` | Rotation in degrees, relative to the bone. `x` = pitch, `y` = roll, `z` = yaw. |
-| `Config.Adjust` | In-game fitting tools (see [Commands](/resources/dusk-knuckles/commands/)). Leave `true` while dialling in values, set `false` for production. |
+| `Config.Adjust` | In-game fitting tools (see [Commands](/customer-docs/resources/dusk-knuckles/commands/)). Leave `true` while dialling in values, set `false` for production. |
 | `Config.RevalidateSeconds` | How often the server re-checks item ownership. Minimum 5. |
 | `Config.UnequipOnDeath` | Take the knuckles off automatically on death. |
 | `Config.Text` | Notification texts, sent through `jo.notif`. |
