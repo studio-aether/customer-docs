@@ -20,7 +20,7 @@ Config.Limits = { total = 24, perSpawn = 8, perPlayer = 12 }
 |---|---|
 | `Locale` | language, see below |
 | `Scale` | default, minimum and maximum goblin size. `0.5` is about 1 m tall |
-| `Health` | health of every goblin |
+| `Health` | health of every goblin, unless the type sets its own |
 | `CorpseSeconds` | how long a dead goblin stays before it is removed |
 | `AggroRadius` | distance in metres at which a goblin goes for its target |
 | `Limits.total` | goblins alive at once on the whole server |
@@ -62,6 +62,17 @@ Config.Weapons = {
     { id = 'bow',     weapon = 'WEAPON_BOW', ammo = 'AMMO_ARROW' },
 }
 ```
+
+Each goblin entry takes `id`, `label`, `model`, `outfit`, `weapon`, and optionally
+`scale`, `health` and `portrait`.
+
+| Field | Meaning |
+|---|---|
+| `scale` | default size of that type. A scale given in the command, the menu or an export wins over it |
+| `health` | overrides `Config.Health` for that type |
+| `portrait` | menu image, a path like `nui://<resource>/<file>.png`. Without it the menu looks for `nui/assets/<id>.png` |
+
+A `Config.Weapons` entry with `WEAPON_UNARMED` gives a fist fighter.
 
 Each goblin entry names the weapon it carries by default. `Config.Weapons` maps those
 names to the game weapon. The types `boarhelm`, `grimfang`, `shaman` and `mix` can be
