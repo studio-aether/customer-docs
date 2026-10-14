@@ -12,7 +12,7 @@ of the same piece, including a player who walks up halfway through.
 - Two devices shipped: a gramophone with a turntable interface, and a radio with a tuning
   dial interface. Each has its own model, its own item and its own interface.
 - 71 curated tracks from 1898 to 1920, sourced from the Internet Archive's public-domain 78
-  rpm collection and the Lummis wax cylinder field recordings of 1904 and 1905. Eight tracks
+  rpm collection and the Lummis wax cylinder field recordings of 1904 and 1905. 21 tracks
   ship as local audio files so playback does not depend on archive.org being reachable.
 - Server-authoritative playback. The server holds what is playing, since when and how loud;
   clients compute their own position in the piece from server time, so two players at the
@@ -43,7 +43,7 @@ The database schema applies itself on first start; there is no SQL file to run.
 | | |
 |---|---|
 | Resource name | `aether_phonograph` |
-| Version | 0.2.0 |
+| Version | 0.2.2 |
 | Game | RedM (`rdr3`) |
 | Dependencies | `jo_libs`, `oxmysql`, `xsound` |
 | Database | `oxmysql`, schema applies itself on first start |
