@@ -40,6 +40,10 @@ The goblins do not flee, and everyone nearby sees the same goblins.
 The first install needs a full server restart, a resource restart is not enough.
 Grimfang and the Shaman have no face animation.
 
+## Orcs and the ogre
+
+With the separate `aether_orcs` pack, three orcs and an ogre join the goblin types. See [Use with Aether Goblins](/customer-docs/resources/aether-orcs/goblins/).
+
 ## Store
 
 [Aether Goblins on the Studio Aether store](https://studio-aether.tebex.io/package/7720932)
