@@ -1,6 +1,13 @@
 ---
 title: Aether Demon Wings
-description: Demon wings for RedM, tintable from a 32 colour palette.
+description: "Aether Demon Wings is a RedM resource that adds demon wings, tintable from a 32 colour palette. For dark fantasy roleplay, VORP, RSG or standalone."
+head:
+  - tag: title
+    content: "Aether Demon Wings - RedM Demon Wings Cosmetic | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Demon Wings\",\"description\":\"Aether Demon Wings is a RedM resource that adds demon wings, tintable from a 32 colour palette. For dark fantasy roleplay, VORP, RSG or standalone.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-wings-demon/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"}}"
 ---
 
 `aether_wings_demon` gives a player a pair of demon wings. The props attach to the ped, take a colour from a
@@ -29,6 +36,12 @@ the resource: no prop pack, no shared dependency.
 | Database | optional, `oxmysql` when saving is enabled |
 | Models | `dusk_wing_dem_l`, `dusk_wing_dem_r` |
 | Parts | `wing_l`, `wing_r` |
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- VORP, RSG or standalone, detected automatically.
+- `oxmysql` only when saving is enabled.
 
 ## Pages
 
