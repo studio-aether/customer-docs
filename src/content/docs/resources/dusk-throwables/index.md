@@ -1,6 +1,13 @@
 ---
 title: Dusk Throwables
-description: Server-authoritative throwables for RedM, dynamite, poison gas bottle, fire bottle and a throwing rock.
+description: "Dusk Throwables is a RedM resource with server-authoritative throwables: dynamite, poison gas bottle, fire bottle and a throwing rock. Built on jo_libs."
+head:
+  - tag: title
+    content: "Dusk Throwables - RedM Dynamite, Fire & Gas Bottles | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Dusk Throwables\",\"description\":\"Dusk Throwables is a RedM resource with server-authoritative throwables: dynamite, poison gas bottle, fire bottle and a throwing rock. Built on jo_libs.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/dusk-throwables/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/dusk-throwables\"]}"
 ---
 
 `dusk_throwables` adds throwable items for RedM with the server deciding whether a throw
@@ -69,6 +76,10 @@ crafting ingredient on many servers.
 - Weapon wheel or holster key: put the throwable away, the item is returned.
 
 One item equals one throw. Putting the weapon away without throwing returns the item.
+
+## Store
+
+[Dusk Throwables on the Studio Aether store](https://studio-aether.tebex.io/package/dusk-throwables)
 
 ## Pages
 

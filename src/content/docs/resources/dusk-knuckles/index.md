@@ -1,6 +1,13 @@
 ---
 title: Dusk Knuckles
-description: Equippable knuckles for RedM — a hand prop plus an unarmed damage bonus, shipping its own model.
+description: "Dusk Knuckles is a RedM resource that adds equippable knuckle dusters: a hand prop with its own model plus an unarmed damage bonus. Built on jo_libs."
+head:
+  - tag: title
+    content: "Dusk Knuckles - RedM Knuckle Dusters with Unarmed Damage | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Dusk Knuckles\",\"description\":\"Dusk Knuckles is a RedM resource that adds equippable knuckle dusters: a hand prop with its own model plus an unarmed damage bonus. Built on jo_libs.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/dusk-knuckles/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/knuckles\"]}"
 ---
 
 `dusk_knuckles` lets a player equip a knuckle duster. Using the item attaches a custom
@@ -25,6 +32,16 @@ off. The model ships inside the resource, so no extra prop pack is required.
 | Game | RedM (`rdr3`) |
 | Framework | [`jo_libs`](https://github.com/Jump-On-Studios/RedM-jo_libs) (bridge + notifications) |
 | Required item | `knuckles` (created by `install.sql` on VORP) |
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- `jo_libs` (framework bridge and notifications).
+- The item `knuckles`, created by `install.sql` on VORP.
+
+## Store
+
+[Dusk Knuckles on the Studio Aether store](https://studio-aether.tebex.io/package/knuckles)
 
 ## Pages
 

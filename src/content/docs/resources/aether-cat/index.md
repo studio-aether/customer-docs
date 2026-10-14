@@ -1,6 +1,13 @@
 ---
 title: Aether Cat
-description: Cat ears and a cat tail for RedM, tintable from a 32 colour palette.
+description: "Aether Cat is a RedM resource that adds animated cat ears and a cat tail, tintable from a 32 colour palette. For fantasy roleplay, VORP, RSG or standalone."
+head:
+  - tag: title
+    content: "Aether Cat - RedM Cat Ears & Tail Cosmetic | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Cat\",\"description\":\"Aether Cat is a RedM resource that adds animated cat ears and a cat tail, tintable from a 32 colour palette. For fantasy roleplay, VORP, RSG or standalone.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-cat/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/7688916\"]}"
 ---
 
 `aether_cat` gives a player a pair of cat ears and a tail. The props attach to the
@@ -34,6 +41,16 @@ the resource: no prop pack, no animation resource, no shared dependency.
 | Parts | `ears`, `tail` |
 | Animation | `aether_cat_sway_v63`, bundled |
 | Languages | `en`, `de`, `fr`, `pt`, `es`, `th` |
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- VORP, RSG or standalone, detected automatically.
+- `oxmysql` only when saving is enabled.
+
+## Store
+
+[Aether Cat on the Studio Aether store](https://studio-aether.tebex.io/package/7688916)
 
 ## Pages
 

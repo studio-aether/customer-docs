@@ -1,6 +1,13 @@
 ---
 title: Aether Fog of War
-description: Persistent fog of war for RedM, drawn on the game's own fog layer and synced through the server.
+description: "Aether Fog of War is a RedM resource that covers the map in persistent fog until each character uncovers it by riding through. Built on jo_libs and oxmysql."
+head:
+  - tag: title
+    content: "Aether Fog of War - RedM Persistent Map Discovery | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Fog of War\",\"description\":\"Aether Fog of War is a RedM resource that covers the map in persistent fog until each character uncovers it by riding through. Built on jo_libs and oxmysql.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-fog-of-war/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/7675617\"]}"
 ---
 
 `aether_fogofwar` adds a persistent fog of war for RedM. The map starts black and every
@@ -53,6 +60,10 @@ The database schema is created and migrated by the resource itself on start.
 | Database | `oxmysql`, schema self-applies on start |
 | Languages | `en`, `de`, `fr`, `es`, `pt` |
 | Open after escrow | `config.lua`, `config/locales/*.lua`, `README.md` |
+
+## Store
+
+[Aether Fog of War on the Studio Aether store](https://studio-aether.tebex.io/package/7675617)
 
 ## Pages
 

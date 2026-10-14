@@ -1,6 +1,13 @@
 ---
 title: Aether Orcs
-description: Three orcs and one ogre as ready-made peds for RedM, with a guide to spawn them.
+description: "Aether Orcs is a RedM resource with three orcs and an ogre as ready-made peds, plus a guide to spawn them. Standalone, for fantasy roleplay servers."
+head:
+  - tag: title
+    content: "Aether Orcs - RedM Orc & Ogre Peds | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Orcs\",\"description\":\"Aether Orcs is a RedM resource with three orcs and an ogre as ready-made peds, plus a guide to spawn them. Standalone, for fantasy roleplay servers.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-orcs/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"}}"
 ---
 
 `aether_orcs` adds three orcs and one ogre to your server as ready-made peds. The models
@@ -42,6 +49,11 @@ points, a spawn menu and combat without writing anything.
 The first install needs a full server restart, a resource restart is not enough.
 The pack replaces clothing of the vanilla ped `cs_mp_camp_cook`. If the game spawns that
 ped, he wears orc gear. The ogre is large, and doorways and low interiors do not fit him.
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- No framework, no database, no scripts.
 
 ## Pages
 

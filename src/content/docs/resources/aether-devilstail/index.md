@@ -1,6 +1,13 @@
 ---
 title: Aether Devils Tail
-description: A devil tail and horns for RedM, tintable from a 32 colour palette.
+description: "Aether Devils Tail is a RedM resource that adds an animated devil tail and horns, tinted separately. For mystic and fantasy roleplay, VORP, RSG or standalone."
+head:
+  - tag: title
+    content: "Aether Devils Tail - RedM Devil Tail & Horns Cosmetic | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Devils Tail\",\"description\":\"Aether Devils Tail is a RedM resource that adds an animated devil tail and horns, tinted separately. For mystic and fantasy roleplay, VORP, RSG or standalone.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-devilstail/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/7688932\"]}"
 ---
 
 `aether_devilstail` gives a player a devil tail and a pair of horns. The props
@@ -35,6 +42,16 @@ dependency.
 | Parts | `tail`, `horns` |
 | Animation | `aether_devil_sway_v1`, bundled |
 | Languages | `en`, `de`, `fr`, `pt`, `es`, `th` |
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- VORP, RSG or standalone, detected automatically.
+- `oxmysql` only when saving is enabled.
+
+## Store
+
+[Aether Devils Tail on the Studio Aether store](https://studio-aether.tebex.io/package/7688932)
 
 ## Pages
 

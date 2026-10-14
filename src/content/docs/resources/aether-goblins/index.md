@@ -1,6 +1,13 @@
 ---
 title: Aether Goblins
-description: Hostile goblins for RedM with ambush points, an admin spawn menu and exports.
+description: "Aether Goblins is a standalone RedM resource that adds hostile goblin peds, ambush points and an admin spawn menu. For fantasy roleplay servers."
+head:
+  - tag: title
+    content: "Aether Goblins - RedM Goblin Peds & Ambush Points | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Goblins\",\"description\":\"Aether Goblins is a standalone RedM resource that adds hostile goblin peds, ambush points and an admin spawn menu. For fantasy roleplay servers.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-goblins/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/7720932\"]}"
 ---
 
 ![Aether Goblins: Boarhelm, Grimfang and Shaman](../../../../assets/aether-goblins/cover.webp)
@@ -47,6 +54,12 @@ With the separate `aether_orcs` pack, three orcs and an ogre join the goblin typ
 ## Store
 
 [Aether Goblins on the Studio Aether store](https://studio-aether.tebex.io/package/7720932)
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- No framework, no database, no other resource.
+- A full server restart after the first install.
 
 ## Pages
 

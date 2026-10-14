@@ -1,6 +1,13 @@
 ---
 title: Aether Fae
-description: Fae wings for RedM that bend while they beat, with three colour layers, saved looks and exports.
+description: "Aether Fae is a RedM resource that adds fae wings which bend while they beat, with three colour layers, saved looks and exports. For fantasy roleplay servers."
+head:
+  - tag: title
+    content: "Aether Fae - RedM Animated Fae Wings | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Fae\",\"description\":\"Aether Fae is a RedM resource that adds fae wings which bend while they beat, with three colour layers, saved looks and exports. For fantasy roleplay servers.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-fae/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"}}"
 ---
 
 `aether_fae` gives a player a pair of fae wings. Each wing has five lobes, three on top and
@@ -43,6 +50,12 @@ streamed assets only load on join.
 
 Coming from `aether_wings_fae`? See
 [Upgrading from aether_wings_fae](/customer-docs/resources/aether-fae/installation/#upgrading-from-aether_wings_fae).
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- No framework required, VORP and RSG are detected.
+- `oxmysql` only for saving looks.
 
 ## Pages
 

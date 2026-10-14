@@ -1,0 +1,23 @@
+# Studio Aether
+
+> Studio Aether - RedM scripts, creatures and systems for fantasy and medieval roleplay servers. Resources are sold on Tebex (https://studio-aether.tebex.io), delivered through the Cfx Portal and documented here.
+
+Every resource page lists features, requirements, configuration, commands and troubleshooting. Resources are escrow protected; each page lists the files that stay open.
+
+## Resources
+
+- [Aether Goblins](https://studio-aether.github.io/customer-docs/resources/aether-goblins/): Aether Goblins is a standalone RedM resource that adds hostile goblin peds, ambush points and an admin spawn menu. For fantasy roleplay servers. Store: https://studio-aether.tebex.io/package/7720932
+- [Aether Orcs](https://studio-aether.github.io/customer-docs/resources/aether-orcs/): Aether Orcs is a RedM resource with three orcs and an ogre as ready-made peds, plus a guide to spawn them. Standalone, for fantasy roleplay servers.
+- [Aether Medusa](https://studio-aether.github.io/customer-docs/resources/aether-medusa/): Aether Medusa is a RedM resource that adds animated snake hair with three colour zones, saved looks and exports. For mystic and fantasy roleplay servers. Store: https://studio-aether.tebex.io/package/7716877
+- [Aether Fae](https://studio-aether.github.io/customer-docs/resources/aether-fae/): Aether Fae is a RedM resource that adds fae wings which bend while they beat, with three colour layers, saved looks and exports. For fantasy roleplay servers.
+- [Aether Cat](https://studio-aether.github.io/customer-docs/resources/aether-cat/): Aether Cat is a RedM resource that adds animated cat ears and a cat tail, tintable from a 32 colour palette. For fantasy roleplay, VORP, RSG or standalone. Store: https://studio-aether.tebex.io/package/7688916
+- [Aether Devils Tail](https://studio-aether.github.io/customer-docs/resources/aether-devilstail/): Aether Devils Tail is a RedM resource that adds an animated devil tail and horns, tinted separately. For mystic and fantasy roleplay, VORP, RSG or standalone. Store: https://studio-aether.tebex.io/package/7688932
+- [Aether Fog of War](https://studio-aether.github.io/customer-docs/resources/aether-fog-of-war/): Aether Fog of War is a RedM resource that covers the map in persistent fog until each character uncovers it by riding through. Built on jo_libs and oxmysql. Store: https://studio-aether.tebex.io/package/7675617
+- [Aether Phonograph](https://studio-aether.github.io/customer-docs/resources/aether-phonograph/): Aether Phonograph is a RedM resource with placeable gramophones and radios, 71 recordings from 1898 to 1920 and synced, server-authoritative playback. Store: https://studio-aether.tebex.io/package/7675558
+- [Dusk Rails](https://studio-aether.github.io/customer-docs/resources/dusk-rails/): Dusk Rails is a RedM resource for ambient train and tram traffic with server-authoritative state. No framework, no dependencies, no database. Store: https://studio-aether.tebex.io/package/dusk-rails
+- [Dusk Throwables](https://studio-aether.github.io/customer-docs/resources/dusk-throwables/): Dusk Throwables is a RedM resource with server-authoritative throwables: dynamite, poison gas bottle, fire bottle and a throwing rock. Built on jo_libs. Store: https://studio-aether.tebex.io/package/dusk-throwables
+- [Dusk Knuckles](https://studio-aether.github.io/customer-docs/resources/dusk-knuckles/): Dusk Knuckles is a RedM resource that adds equippable knuckle dusters: a hand prop with its own model plus an unarmed damage bonus. Built on jo_libs. Store: https://studio-aether.tebex.io/package/knuckles
+
+## Store
+
+- [Studio Aether on Tebex](https://studio-aether.tebex.io): all listed resources and prices.

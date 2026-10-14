@@ -1,6 +1,13 @@
 ---
 title: Dusk Rails
-description: Ambient rail traffic for RedM with server-authoritative state. No framework, no dependencies, no database.
+description: "Dusk Rails is a RedM resource for ambient train and tram traffic with server-authoritative state. No framework, no dependencies, no database."
+head:
+  - tag: title
+    content: "Dusk Rails - RedM Ambient Train & Tram Traffic | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Dusk Rails\",\"description\":\"Dusk Rails is a RedM resource for ambient train and tram traffic with server-authoritative state. No framework, no dependencies, no database.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/dusk-rails/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/dusk-rails\"]}"
 ---
 
 `dusk_rails` runs the trains and the Saint Denis tram as ambient world traffic, with
@@ -42,6 +49,15 @@ disconnecting mid-route does not leave a ghost train or a stuck line.
 | Eastern Line | `east` | enabled | Freight train on the eastern network, from Saint Denis outward |
 | Saint Denis Tram | `tram` | enabled | City tram with passengers |
 | Western Line | `west` | disabled | Second train on the old west tracks, flip `enabled` to run it |
+
+## Requirements
+
+- A RedM server (`rdr3`) with OneSync enabled.
+- No framework, no dependencies, no database.
+
+## Store
+
+[Dusk Rails on the Studio Aether store](https://studio-aether.tebex.io/package/dusk-rails)
 
 ## Pages
 

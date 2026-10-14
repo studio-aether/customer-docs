@@ -1,6 +1,13 @@
 ---
 title: Aether Phonograph
-description: Placeable music devices for RedM with curated audio and server-authoritative, synced playback.
+description: "Aether Phonograph is a RedM resource with placeable gramophones and radios, 71 recordings from 1898 to 1920 and synced, server-authoritative playback."
+head:
+  - tag: title
+    content: "Aether Phonograph - RedM Placeable Gramophone & Radio | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Phonograph\",\"description\":\"Aether Phonograph is a RedM resource with placeable gramophones and radios, 71 recordings from 1898 to 1920 and synced, server-authoritative playback.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-phonograph/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/7675558\"]}"
 ---
 
 `aether_phonograph` adds placeable music devices with curated audio, native prompts and
@@ -58,6 +65,10 @@ The database schema applies itself on first start; there is no SQL file to run.
 
 The radio's model, `aether_radio01x`, streams with the resource. RDR2 itself ships no radio
 prop, since the game is set in 1899, two decades before the first broadcast.
+
+## Store
+
+[Aether Phonograph on the Studio Aether store](https://studio-aether.tebex.io/package/7675558)
 
 ## Pages
 

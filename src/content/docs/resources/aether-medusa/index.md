@@ -1,6 +1,13 @@
 ---
 title: Aether Medusa
-description: Animated snake hair for RedM with three colour zones, saved looks and exports.
+description: "Aether Medusa is a RedM resource that adds animated snake hair with three colour zones, saved looks and exports. For mystic and fantasy roleplay servers."
+head:
+  - tag: title
+    content: "Aether Medusa - RedM Animated Snake Hair | Studio Aether"
+  - tag: script
+    attrs:
+      type: application/ld+json
+    content: "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Aether Medusa\",\"description\":\"Aether Medusa is a RedM resource that adds animated snake hair with three colour zones, saved looks and exports. For mystic and fantasy roleplay servers.\",\"applicationCategory\":\"GameApplication\",\"operatingSystem\":\"RedM server (FXServer)\",\"url\":\"https://studio-aether.github.io/customer-docs/resources/aether-medusa/\",\"publisher\":{\"@id\":\"https://studio-aether.tebex.io/#organization\"},\"sameAs\":[\"https://studio-aether.tebex.io/package/7716877\"]}"
 ---
 
 ![Aether Medusa](../../../../assets/aether-medusa/cover.webp)
@@ -43,7 +50,13 @@ Players need a fresh connect after the resource is added, streamed assets only l
 
 ## Store
 
-https://studio-aether.tebex.io/package/7716877
+[Aether Medusa on the Studio Aether store](https://studio-aether.tebex.io/package/7716877)
+
+## Requirements
+
+- A RedM server (`rdr3`).
+- No framework required, VORP and RSG are detected.
+- `oxmysql` only for saving looks.
 
 ## Pages
 
