@@ -50,7 +50,7 @@ The database schema applies itself on first start; there is no SQL file to run.
 | | |
 |---|---|
 | Resource name | `aether_phonograph` |
-| Version | 0.2.2 |
+| Version | 0.2.3 |
 | Game | RedM (`rdr3`) |
 | Dependencies | `jo_libs`, `oxmysql`, `xsound` |
 | Database | `oxmysql`, schema applies itself on first start |
