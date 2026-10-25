@@ -52,8 +52,11 @@ own script already gates.
 Both exports and the event use an `owner` string rather than a server id, since exploration
 is stored per character or per account, not per connection:
 
-- `c:<charid>` when `Config.PersistenceMode = 'character'`.
-- `a:<identifier>` when `Config.PersistenceMode = 'account'`.
+- `c:<character>` when `Config.PersistenceMode = 'character'`. The character is the
+  framework's character id, the citizen id on RSG, QBR, QR and RPX, and
+  `<identifier>:<charid>` on RedEM, which numbers characters per account.
+- `a:<account>` when `Config.PersistenceMode = 'account'`. The account is the framework
+  identifier, on RSG, QBR, QR and RPX the Rockstar license.
 
 ## What the server trusts and what it does not
 

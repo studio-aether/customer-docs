@@ -35,11 +35,11 @@ either one invalidates stored progress; see Installation.
 |---|---|---|
 | `SampleInterval` | `750` | How often the client checks its position, in ms. |
 | `SampleRingRadius` | `2` | Cells revealed around the player; `2` means a 5 by 5 block. |
-| `FlushInterval` | `20000` | How often the client sends newly revealed cells to the server, in ms. |
+| `FlushInterval` | `5000` | How often the client sends newly revealed cells to the server, in ms. |
 | `MaxCellsPerFlush` | `512` | Upper bound on cells accepted in one flush. |
-| `MinFlushGap` | `5000` | Minimum time between two accepted flushes from the same player, in ms. |
+| `MinFlushGap` | `2000` | Minimum time between two accepted flushes from the same player, in ms. Keep it below `FlushInterval`. |
 | `MinDiscoveryGap` | `3000` | Minimum time between two accepted discovery reports from the same player, in ms. |
-| `SaveInterval` | `60000` | How often the server writes dirty maps to the database, in ms. |
+| `SaveInterval` | `10000` | How often the server writes changed maps to the database, in ms. Maps are also written when a player drops, when the resource stops and when txAdmin announces a shutdown or restart. |
 
 ## Replay
 

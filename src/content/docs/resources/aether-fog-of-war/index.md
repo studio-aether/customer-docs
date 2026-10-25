@@ -53,7 +53,7 @@ The database schema is created and migrated by the resource itself on start.
 | | |
 |---|---|
 | Resource name | `aether_fogofwar` |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Game | RedM (`rdr3`) |
 | Dependencies | `jo_libs`, `oxmysql` |
 | Framework | VORP, RSG, QBR, RPX, FRP, TPZ, RedEM, detected automatically |
